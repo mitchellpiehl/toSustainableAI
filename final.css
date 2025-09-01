@@ -423,13 +423,14 @@ input[type="submit"]:hover {
 p a {
     text-decoration: none;
 }
-/* Desktop parallax */
 @media screen and (min-width: 811px) {
     .parallax-intro, .parallax-intro2, .parallax-intro3, .parallax-intro4,
     .parallax-wrapper, .parallax-wrapper2, .parallax-wrapper3, .parallax-wrapper4,
     .parallax-wrapper5, .parallax-wrapper6, .parallax-wrapper7, .parallax-wrapper8,
     .parallax-wrapper9, .parallax-wrapper0 {
-        background-attachment: fixed;
+        background-attachment: scroll; /* instead of fixed */
+        background-size: contain; /* or cover, depending on your design */
+        background-position: center top; /* keeps it neat */
     }
 }
 
